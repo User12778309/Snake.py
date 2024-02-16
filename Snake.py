@@ -36,7 +36,7 @@ cellule = ( 40 )
 pygame.init()
 
 screen = pygame.display.set_mode((400,600))
-pygame.display.set_caption("Snake de golmon")
+pygame.display.set_caption("Snake de golmon V1")
 
 FPS = pygame.time.Clock()
 
