@@ -27,6 +27,14 @@ class Player():
             self.y -=1
         if pressed[pygame.K_DOWN]:
             self.y +=1
+        if pressed[pygame.K_a]:
+            self.x -=1
+        if pressed[pygame.K_d]:
+            self.x +=1
+        if pressed[pygame.K_w]:
+            self.y -=1
+        if pressed[pygame.K_s]:
+            self.y +=1
 
 
 ligne = ( 10 )
