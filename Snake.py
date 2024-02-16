@@ -36,6 +36,14 @@ class Player():
         if pressed[pygame.K_s]:
             self.y +=1
 
+class Game():
+    def __init__(self):
+        self.player = Player()
+        self.food = Food()
+    def collision(self):
+        if player.x == food.x:
+            if player.y == food.y:
+                print("TOUCHE")
 
 ligne = ( 10 )
 colonne = ( 15 )
@@ -50,6 +58,7 @@ FPS = pygame.time.Clock()
 
 food = Food()
 player = Player()
+game = Game()
 
 def show_grid():
     for i in range(0,ligne):
@@ -68,5 +77,6 @@ while True:
     food.draw_food()
     player.draw_player()
     player.move_player()
+    game.collision()
     pygame.display.flip()
     FPS.tick(10)
